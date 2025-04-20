@@ -24,7 +24,7 @@ This project is a hands-on lab environment built to simulate a small enterprise 
 
 ## 🗺️ Lab Diagram
 
-![Lab Topology](diagrams/ad-lab-diagram.png)
+![Lab Topology](architecture/ActivieDirectory.png)
 
 ---
 

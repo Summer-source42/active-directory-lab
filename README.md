@@ -61,11 +61,9 @@ Example command (PowerShell on Windows):
 `Get-FileHash .\Downloads\filename.iso`  
 Compare the output with the official hash provided on the download website.
 
----
-
 ### 💡 Network Configuration
 Static IP configuration was applied to the Ubuntu-based Splunk server using Netplan.  
-👉 See detailed config: [`network-config.yaml`](network-config.yaml)
+👉 See detailed config: [`network-config.yaml`](#)
 
 ---
 
@@ -81,18 +79,16 @@ Static IP configuration was applied to the Ubuntu-based Splunk server using Netp
   - **RAS/NAT**
 
 📸 *Screenshot: AD Services Configuration*  
-![AD Services](screenshots/ad_services.png)
+![AD Services](#)
 
----
 
 ### 🧑‍💼 Bulk User Creation
 Used a PowerShell script to generate over **1000 user accounts** in Active Directory.  
-👉 Script source: [`powershell-script.ps1`](powershell-script.ps1)
+👉 Script source: [`powershell-script.ps1`](#)
 
 📸 *Screenshot: Bulk User Creation in AD*  
-![AD Users](screenshots/ad_users.png)
+![AD Users](#)
 
----
 
 ## 🧩 Client Configuration
 
@@ -101,6 +97,60 @@ The Windows 10 Pro client machine was:
 - Joined to the domain via system settings
 
 📸 *Screenshot: Domain Join Confirmation*  
-![Domain Join](screenshots/domain_join.png)
+![Domain Join](#)
+
+## 📊 Splunk Server & Logging
+
+- Splunk Enterprise was installed on Ubuntu Pro for centralized log collection.
+- Forwarded logs from Windows Server using Splunk Universal Forwarder.
+- Monitored Active Directory-related events and suspicious activity in real time.
+
+👉 Full setup details: [`splunk-setup.md`](#)
+
+📸 *Screenshot: Splunk Dashboard with Windows Events*  
+![Splunk Dashboard](#)
+
+
+## 🧪 Security Simulation (Kali Linux)
+
+Kali Linux was used to simulate attack scenarios:
+- Network scans (e.g., Nmap)
+- Authentication probing
+- Lateral movement within the domain
+
+Logs and behaviors were monitored in Splunk to assess detection capability.
 
 ---
+## 🛠 Troubleshooting
+
+### 1. 🖥️ Virtual Machine Not in Fullscreen
+**Fix:** Install VirtualBox Guest Additions from the device menu inside each VM.
+
+
+
+### 2. 🧭 Splunk GUI Not Displayed on Ubuntu Server
+To display the Splunk web GUI:
+- Install a desktop environment using `ubuntu-desktop`
+- Open firewall for port 8000
+
+
+
+### 3. 🖧 Domain Join Failures
+- Ensure DNS is pointed to the domain controller
+- Confirm that system clocks are synchronized
+- Restart DNS service or reboot client if needed
+
+
+### 4. 🌐 Static IP Assignment for Splunk
+- Used Netplan for IP configuration  
+👉 See: [`network-config.yaml`](#)
+
+---
+
+## 🧠 Key Learnings
+
+- Created a self-contained enterprise network lab using virtual machines.
+- Gained real-world experience configuring Active Directory, DNS, DHCP, and NAT.
+- Collected and analyzed log data using Splunk.
+- Simulated cyber-attacks and interpreted event responses.
+- Navigated and resolved typical IT infrastructure issues.

@@ -84,7 +84,7 @@ Static IP configuration was applied to the Ubuntu-based Splunk server using Netp
 
 ### 🧑‍💼 Bulk User Creation
 Used a PowerShell script to generate over **1000 user accounts** in Active Directory.  
-👉 Script source: [`powershell-script.ps1`]()
+👉 Script source: [`powershell-script.ps1`](/scripts/powershell-script.ps1)
 
 📸 *Screenshot: Bulk User Creation in AD*  
 ![AD Users](#)

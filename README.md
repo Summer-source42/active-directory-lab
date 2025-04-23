@@ -37,7 +37,7 @@ This project demonstrates how to set up a multi-VM enterprise-like environment u
 
 ## 🗺️ Lab Diagram
 
-![Lab Topology](architecture/ActivieDirectory.png)
+![Lab Topology](architecture/Active_Directory_lab.png)
 
 ### 🖥️ Hardware Requirements
 - **RAM:** 16 GB (allocated across all VMs)  

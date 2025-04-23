@@ -123,30 +123,32 @@ Kali Linux was used to simulate attack scenarios:
 Logs and behaviors were monitored in Splunk to assess detection capability.
 
 ---
-## 🛠 Troubleshooting
+---
 
-### 1. 🖥️ Virtual Machine Not in Fullscreen
-**Fix:** Install VirtualBox Guest Additions from the device menu inside each VM.
+---
 
+## 🛠️ Troubleshooting
 
+Common issues encountered during setup and how to resolve them.
 
-### 2. 🧭 Splunk GUI Not Displayed on Ubuntu Server
-To display the Splunk web GUI:
-- Install a desktop environment using `ubuntu-desktop`
-- Open firewall for port 8000
+---
 
+### 📺 Virtual Machine Not Entering Fullscreen
 
+**Issue**:  
+The VM display doesn't adapt to full screen, limiting usability.
 
-### 3. 🖧 Domain Join Failures
-- Ensure DNS is pointed to the domain controller
-- Confirm that system clocks are synchronized
-- Restart DNS service or reboot client if needed
+**Cause**:  
+Missing VirtualBox Guest Additions, which enable better integration between host and guest OS.
 
+**Solution**:
+1. Start the virtual machine.
+2. Go to the menu bar in VirtualBox:  
+   `Devices > Insert Guest Additions CD Image...`
+3. Run the setup inside the guest OS.
+4. Reboot the VM after installation.
 
-### 4. 🌐 Static IP Assignment for Splunk
-- Used Netplan for IP configuration  
-👉 See: [`network-config.yaml`](#)
-
+  
 ---
 
 ## 🧠 Key Learnings

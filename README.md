@@ -80,6 +80,9 @@ Static IP configuration was applied to the Ubuntu-based Splunk server using Netp
   - **DNS**
   - **RAS/NAT**
 
+📸 *Screenshot: AD Domain Confirmation*
+![AD Services](/Screenshots/AD_Domain_confirmation.png)
+
 📸 *Screenshot: AD Services Configuration*  
 ![AD Services](/Screenshots/ad_services.png)
 

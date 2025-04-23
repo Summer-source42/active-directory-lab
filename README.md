@@ -60,6 +60,8 @@ All virtual machines were created using Oracle VirtualBox.
 Example command (PowerShell on Windows):
 `Get-FileHash .\Downloads\filename.iso`  
 Compare the output with the official hash provided on the download website.
+📸 *Screenshot: Bulk User Creation in AD*
+![AD Users Generating](/Screenshots/powershell_code_running.png)
 
 ### 💡 Network Configuration
 Static IP configuration was applied to the Ubuntu-based Splunk server using Netplan.  
@@ -79,15 +81,15 @@ Static IP configuration was applied to the Ubuntu-based Splunk server using Netp
   - **RAS/NAT**
 
 📸 *Screenshot: AD Services Configuration*  
-![AD Services](#)
+![AD Services](/Screenshots/ad_services.png)
 
 
 ### 🧑‍💼 Bulk User Creation
 Used a PowerShell script to generate over **1000 user accounts** in Active Directory.  
 👉 Script source: [`powershell-script.ps1`](/scripts/powershell-script.ps1)
 
-📸 *Screenshot: Bulk User Creation in AD*  
-![AD Users](#)
+📸 *Screenshot: Bulk User Creation in AD*
+![AD Users](/Screenshots/ad_users.png)
 
 
 ## 🧩 Client Configuration

@@ -63,8 +63,7 @@ Compare the output with the official hash provided on the download website.
 
 ### 💡 Network Configuration
 Static IP configuration was applied to the Ubuntu-based Splunk server using Netplan.  
-👉 See detailed config: [`network-config.yaml`](/configs
-/network-config.yaml)
+👉 See detailed config: [`network-config.yaml`](/configs/network-config.yaml)
 
 ---
 

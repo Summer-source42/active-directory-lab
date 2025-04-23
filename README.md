@@ -145,7 +145,22 @@ Missing VirtualBox Guest Additions, which enable better integration between host
 3. Run the setup inside the guest OS.
 4. Reboot the VM after installation.
 
-  
+### 🖥️ Ubuntu Server GUI Not Displayed After Login
+
+**Issue**:  
+After installing a desktop environment on Ubuntu Server, the system still boots into a terminal (CLI) instead of a graphical interface (GUI).
+
+**Cause**:  
+The system is defaulting to multi-user (non-GUI) target or the GUI was not properly installed.
+
+**Solution**:
+1. Ensure the desktop environment is installed:
+   ```bash
+   sudo apt update
+   sudo apt install ubuntu-desktop
+   sudo systemctl set-default graphical.target
+   sudo reboot
+
 ---
 
 ## 🧠 Key Learnings

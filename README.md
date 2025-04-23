@@ -85,7 +85,7 @@ Static IP configuration was applied to the Ubuntu-based Splunk server using Netp
 
 
 ### 🧑‍💼 Bulk User Creation
-Used a PowerShell script to generate over **1000 user accounts** in Active Directory.  
+Used a PowerShell script to generate over **1000 user accounts** under _USERS in Active Directory.  
 👉 Script source: [`powershell-script.ps1`](/scripts/powershell-script.ps1)
 
 📸 *Screenshot: Bulk User Creation in AD*
@@ -122,13 +122,7 @@ Kali Linux was used to simulate attack scenarios:
 
 Logs and behaviors were monitored in Splunk to assess detection capability.
 
----
----
-
----
-
 ## 🛠️ Troubleshooting
-
 Common issues encountered during setup and how to resolve them.
 
 ---

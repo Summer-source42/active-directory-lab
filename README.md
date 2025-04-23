@@ -143,7 +143,7 @@ To display the Splunk web GUI:
 
 ### 4. 🌐 Static IP Assignment for Splunk
 - Used Netplan for IP configuration  
-👉 See: [`network-config.yaml`](/configs/network-config.yaml)
+👉 See: [`network-config.yaml`](#)
 
 ---
 
